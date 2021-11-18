@@ -1,0 +1,113 @@
+/* presets */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.textoLig {
+    font-family: 'Spartan', sans-serif;
+} /* texto light */
+
+.textoReg {
+    font-family: 'Noto Serif JP', serif;
+} /* texto regular */
+
+.fondoPag {
+    background-color: rgba(92, 126, 99, 0.849);
+} /* fondo de pag clarito */
+
+.colorBack {
+    background-color: rgba(250, 214, 189, 0.849);
+} /* color menu nav */
+
+/* body */
+.gridContainer {
+    display: grid;
+    grid-template-rows: 1fr 8fr 1fr;
+}
+
+.contenedor {
+    background-image: url(../media/croix.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: stretch;
+}
+
+@media screen and (max-width: 768px) {
+    .contenedor {
+        background-size: cover;
+    }
+}
+
+/* main section */
+
+.tituloInicio {
+    color: rgb(230, 230, 230, 0.801);
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 220px;
+}
+
+/* footer inicio */
+.footerPrincipal {
+    display: flex; 
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.footerPrincipal h4 {
+    padding-left: 50px;
+    letter-spacing: 10px;
+    
+}
+
+.footerPrincipal a {
+    text-decoration: none;
+    color: rgba(214, 213, 213, 0.801);
+}
+
+.footerPrincipal a:hover {
+    color: rgba(214, 112, 39, 0.808);
+}
+
+/* productos página */
+
+.gridContenedor {
+    display: grid;
+    grid-template-areas: 
+    'header'
+    'main'
+    'footer';
+}
+
+.tituloP h3 {
+    color: rgba(238, 236, 236, 0.87);
+    text-align: center;
+    padding: 20px;
+}
+
+.productosInfo {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.videoYT {
+    margin-left: 65px;
+    margin-top: 30px;
+}
+
+.carrusel {
+    width: 210px;
+    height: 315px;
+}
+
+.filaDividida {
+    display: grid;
+}

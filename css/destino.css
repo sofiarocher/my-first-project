@@ -1,0 +1,270 @@
+@charset "UTF-8";
+/* presets */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+/* variables colores */
+.textoLig {
+  font-family: 'Spartan', sans-serif;
+  font-weight: bold;
+  color: #4d4747; }
+
+.textoReg {
+  font-family: 'Noto Serif JP', serif;
+  font-weight: bold;
+  color: #4d4747; }
+
+.fondoPag {
+  background-color: rgba(92, 126, 99, 0.849); }
+
+.colorBack {
+  background-color: rgba(250, 214, 189, 0.849); }
+
+/* color menu nav */
+.gridContainer {
+  display: grid;
+  grid-template-rows: 1fr 8fr 1fr; }
+
+.contenedor {
+  background-image: url(../media/croix.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 789px; }
+
+/* main section */
+.tituloInicio {
+  color: rgba(230, 230, 230, 0.801);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  margin-top: 220px; }
+  .tituloInicio .texto1 {
+    font-family: 'Noto Serif JP', serif;
+    font-weight: bold; }
+  .tituloInicio .texto2 {
+    font-family: 'Spartan', sans-serif;
+    font-weight: bold; }
+
+/* footer inicio */
+.footerPrincipal {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  margin-top: 110px; }
+  .footerPrincipal h4 {
+    padding-left: 50px;
+    letter-spacing: 10px; }
+  .footerPrincipal a {
+    text-decoration: none;
+    color: rgba(214, 213, 213, 0.801); }
+  .footerPrincipal a:hover {
+    color: rgba(214, 112, 39, 0.808); }
+
+/* productos página */
+.tituloP h3 {
+  color: rgba(238, 236, 236, 0.87);
+  text-align: center;
+  padding: 20px; }
+
+.productosInfo {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: space-evenly; }
+
+@media screen and (max-width: 1024px) {
+  .productosInfo {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto; } }
+
+@media screen and (max-width: 768px) {
+  .productosInfo {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto; } }
+
+.miniGrid {
+  display: grid;
+  grid-template-areas: 'vid circ'; }
+
+.videoYT {
+  margin-left: 45px;
+  margin-top: 30px;
+  grid-area: vid; }
+
+@media screen and (max-width: 1024px) {
+  .videoYT {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center; } }
+
+.hornoProd {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  background-color: #a4b9a9;
+  text-align: center;
+  color: rgba(230, 230, 230, 0.801);
+  grid-area: circ;
+  margin-top: 30px;
+  border-radius: 30px;
+  margin-right: 50px; }
+
+.textoHorno {
+  margin-top: 10px; }
+
+.footerProductos {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  margin-top: 110px; }
+  .footerProductos h4 {
+    padding-left: 50px;
+    letter-spacing: 10px; }
+  .footerProductos a {
+    text-decoration: none;
+    color: rgba(214, 213, 213, 0.801); }
+  .footerProductos a:hover {
+    color: rgba(214, 112, 39, 0.808); }
+
+/* PORMAYOR */
+.formS {
+  width: 50%;
+  margin: auto;
+  padding: 20px;
+  background-color: #a4b9a9;
+  border-radius: 20px;
+  margin-top: 100px; }
+
+@media screen and (max-width: 1024px) {
+  .formS {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+    background-color: #a4b9a9;
+    border-radius: 20px;
+    margin-top: 100px; } }
+
+.footerXmayor {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  margin-top: 40px; }
+  .footerXmayor h4 {
+    padding-left: 50px;
+    letter-spacing: 10px; }
+  .footerXmayor a {
+    text-decoration: none;
+    color: rgba(214, 213, 213, 0.801); }
+  .footerXmayor a:hover {
+    color: rgba(214, 112, 39, 0.808); }
+
+/* NOSOTRAS */
+.nosotrasMain {
+  background-color: #a4b9a9;
+  border-radius: 50px;
+  width: 90%;
+  margin: auto;
+  margin-top: 60px;
+  height: 500px;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center; }
+  .nosotrasMain .carruselNosotras {
+    width: 50%;
+    margin-left: 30px; }
+  .nosotrasMain .textoNosotras {
+    width: 500px;
+    line-height: 2;
+    text-align: start; }
+    .nosotrasMain .textoNosotras h2 a {
+      text-decoration: none;
+      color: rgba(214, 112, 39, 0.808); }
+    .nosotrasMain .textoNosotras a:hover {
+      color: rgba(214, 213, 213, 0.801); }
+
+@media screen and (max-width: 1024px) {
+  .nosotrasMain {
+    background-color: #a4b9a9;
+    border-radius: 50px;
+    margin: auto;
+    margin-top: 60px;
+    height: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center; }
+    .nosotrasMain .carruselNosotras {
+      width: 100%;
+      margin-left: 30px; }
+    .nosotrasMain .textoNosotras {
+      width: 400px;
+      line-height: 2;
+      text-align: start; }
+      .nosotrasMain .textoNosotras h2 a {
+        text-decoration: none;
+        color: rgba(214, 112, 39, 0.808); }
+      .nosotrasMain .textoNosotras a:hover {
+        color: rgba(214, 213, 213, 0.801); } }
+
+.footerNosotras {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  margin-top: 110px; }
+  .footerNosotras h4 {
+    padding-left: 50px;
+    letter-spacing: 10px; }
+  .footerNosotras a {
+    text-decoration: none;
+    color: rgba(214, 213, 213, 0.801); }
+  .footerNosotras a:hover {
+    color: rgba(214, 112, 39, 0.808); }
+
+/* CONTACTO */
+.formContacto {
+  width: 40%;
+  padding: 20px;
+  background-color: #a4b9a9;
+  border-radius: 20px;
+  margin-top: 60px;
+  margin-left: 40px; }
+
+@media screen and (max-width: 1024px) {
+  .formContacto {
+    width: 90%;
+    padding: 20px;
+    background-color: #a4b9a9;
+    border-radius: 20px;
+    margin-top: 60px;
+    margin-left: 40px;
+    margin: auto; } }
+
+.footerContacto {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  margin-top: 110px; }
+  .footerContacto h4 {
+    padding-left: 50px;
+    letter-spacing: 10px; }
+  .footerContacto a {
+    text-decoration: none;
+    color: rgba(214, 213, 213, 0.801); }
+  .footerContacto a:hover {
+    color: rgba(214, 112, 39, 0.808); }
